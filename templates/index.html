@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Neural Network</title>
+  <script src="{{ url_for('static', filename='js/predict.js') }}"></script>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css')}}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/flex-fm.css')}}">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo+2">
+</head>
+<body>
+  <div class="site-wrapper">
+    <header>
+      <div class="logo"><img src="{{url_for('static', filename='img/brain.svg')}}" alt="r"></div>
+      <div class="text">Simple neural network</div>
+    </header>
+    <main>
+      <div class="app">
+        <div class="flex jcc">
+          <div class="input-field">
+            <label for="data" class="label">Enter data in csv format:</label>
+            <textarea id="data" class="tarea input"></textarea>
+            <div class="error" id='data-error'></div>
+          </div>
+        </div>
+        <div class="flex jcc">
+          <div class="input-field">
+            <label for="predict-val" class="label">Enter data in csv format:</label>
+            <input id="predict-val" class="input"></input>
+            <div class="error"></div>
+          </div>
+          <div class="input-field">
+            <label for="predicted-val" class="label">Enter data in csv format:</label>
+            <input id="predicted-val" class="input" readonly></input>
+            <div class="error"></div>
+          </div>
+        </div>
+        <div class="flex jce aic pt20 pr20">
+          <button id="predict-btn" class="btn">
+            <img src="{{url_for('static', filename='img/user-experience.svg')}}" alt="r">
+            Predict</button>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+.flex {
+  display: flex;
+}
+
+.jcc {
+  justify-content: center;
+}
+
+.jcs {
+  justify-content: flex-start;
+}
+
+.jce {
+  justify-content: flex-end;
+}
+
+.aic {
+  align-items: center;
+}
+
+.centered {
+  justify-content: center;
+  align-items: center;
+}
+
+.pt10 {
+  padding-top: 10px;
+}
+
+.pt20 {
+  padding-top: 20px;
+}
+
+.pr10 {
+  padding-right: 10px;
+}
+
+.pr20 {
+  padding-right: 10px;
+}
